@@ -29,7 +29,11 @@ This profile
   "@graph": [
     {
       "@id": "./",
-      "@type": "Dataset",
+      "@type": [
+        "Dataset",
+        "SoftwareSourceCode",
+        "SoftwareApplication"
+      ],
       "hasPart": [
         {
           "@id": "docker/Dockerfile_0.1.0_gdal3.7.0_mcpy3.10_ubuntu22.04_full"
@@ -402,10 +406,8 @@ This profile
       "availableOnDevice": {
         "@id": "resources.yml"
       },
-      "conformsTo": [
-            {"@id": "https://w3id.org/ro/crate/1.1"},
-            {"@id": "https://w3id.org/ro/profiles/software/source-code/0.1"}
-        ]
+      "conformsTo": {
+        "@id": "https://purl.archive.org/language-data-commons/profile#Software"
       }
     },
     {
@@ -1104,7 +1106,8 @@ This profile
       "@type": "File"
     }
   ]
-}```
+}
+```
 
 
 ## Requirements - TO BE EDITED!!!!
