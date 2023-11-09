@@ -3,7 +3,6 @@
   "version": "0.1",
   "description": "RO-Crate profiles for describing software ",
   "main": "index.js",
-
   "directories": {
     "doc": "docs"
   },
