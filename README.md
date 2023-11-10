@@ -2,7 +2,7 @@
 
 This repository is for maintaining RO-Crate profiles for Software source code.
 
-This uses RO-Crate-Editor profiles maintained by the Lanaguage Data Commons of Australia
+This uses RO-Crate-Editor profiles maintained by the Language Data Commons of Australia
 
 ## To maintain the profile(s)
 

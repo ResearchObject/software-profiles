@@ -15,7 +15,10 @@ This profile uses terminology from the [RO-Crate 1.1 specification](https://w3id
 
 ## Overview
 
-This profile ...
+This profile is based on the [RO-Crate Metadata Specification 1.1](https://www.researchobject.org/ro-crate/1.1/), and
+it used to describe a collection of software source code files (as in a git repository) using terms from the 
+schema.org "Dataset", "SoftwareSourceCode", and "SoftwareApplication" types.
+It is intended to be 100% semantically interoperable with the Codemeta project (https://codemeta.github.io/index.html).
 
 
 ## Example Metadata File (ro-crate-metadata.json) 
@@ -23,19 +26,11 @@ This profile ...
 ${exampleEntities('main')}
 
 
-
-
-
-
 ## Requirements 
-
 
 ${rules.RootDataEntity}
 
 ${rules.RootDataEntityProperties}
-
-
-
 
 ${rules.allClasses}
 
