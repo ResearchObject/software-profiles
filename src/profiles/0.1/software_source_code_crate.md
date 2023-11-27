@@ -28,7 +28,7 @@ TODO: Provide an environment.yml files (per Conda)
 
 TODO: Include an example of the .yml file inline
 
-TODO: include an example SoftwareSourceCode entity with a link to the YML file with ${exampleEntities('execution-environment', ['./', 'environment.yml'])}
+${exampleEntities('hardware-env', ['./', 'resources.yml'])}
 
 
 ## Example Metadata File (ro-crate-metadata.json) 

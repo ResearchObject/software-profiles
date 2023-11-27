@@ -21,6 +21,45 @@ schema.org "Dataset", "SoftwareSourceCode", and "SoftwareApplication" types.
 It is intended to be 100% semantically interoperable with the Codemeta project (https://codemeta.github.io/index.html).
 
 
+
+### Specifying an execution environment
+
+TODO: Provide an environment.yml files (per Conda) 
+
+TODO: Include an example of the .yml file inline
+
+```json
+{
+  "@id": "./",
+  "@type": [
+    "Dataset",
+    "SoftwareSourceCode",
+    "SoftwareApplication"
+  ],
+  "conformsTo": {
+    "@id": "https://purl.archive.org/language-data-commons/profile#Software"
+  },
+  "hasPart": {
+    "@id": "resources.yml"
+  },
+  "name": "Example crate with a hardware environment",
+  "description": "Illustrates how to link a software application to the virtualised environment used to execute it",
+  "datePublished": "2023-11-28"
+}
+```
+```json
+{
+  "@id": "resources.yml",
+  "@type": "File",
+  "name": "Example hardware resources specification file",
+  "description": "This file describes the attributes of a virtual machine such as how many CPUs it has and how much RAM. The values in file should follow the format used by Binder to allocate resources in Kubernetes."
+}
+```
+[source](../example/hardware-env/README.md)
+
+
+
+
 ## Example Metadata File (ro-crate-metadata.json) 
 
 ```json
