@@ -21,6 +21,16 @@ schema.org "Dataset", "SoftwareSourceCode", and "SoftwareApplication" types.
 It is intended to be 100% semantically interoperable with the Codemeta project (https://codemeta.github.io/index.html).
 
 
+
+### Specifying an execution environment
+
+TODO: Provide an environment.yml files (per Conda) 
+
+TODO: Include an example of the .yml file inline
+
+TODO: include an example SoftwareSourceCode entity with a link to the YML file with ${exampleEntities('execution-environment', ['./', 'environment.yml'])}
+
+
 ## Example Metadata File (ro-crate-metadata.json) 
 
 ${exampleEntities('main')}
