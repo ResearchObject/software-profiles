@@ -34,7 +34,7 @@ the repo rather than encapsulating them in the RO-Crate
 Below is a sample ```environment.yml``` file used by BinderHub to specify Conda Python software dependencies for a 
 custom environment. It can be created using the command ```conda env export```. There are other language-dependent 
 files which can be used to specify environments, including ```runtime.txt```, ```install.R```, or ```dockerfile```, 
-and these files should be referenced in the "softwareRequirements" section of the RO-Crate. Further information can be 
+and these files should be referenced in the ```softwareRequirements``` section of the RO-Crate. Further information can be 
 found at https://mybinder.readthedocs.io/en/latest/using/config_files.html.
 
 ${exampleEntities('software-env', ['./', 'environment.yml'])}
@@ -42,10 +42,11 @@ ${exampleEntities('software-env', ['./', 'environment.yml'])}
 #### Hardware resource requirements
 
 Below is a sample ```resources.yml``` file used to specify minimum hardware requirements for the repository's 
-execution environment. This file can include storage, memory, CPU count, CPU architecture and GPU requirements. 
-It will be used by ATAP portal to filter known BinderHub installations by resource levels to ensure successful execution.
-Labels and values are derived from JupyterHub configuration YAML which specifies resources for BinderHub Kubernetes pods.
-The ```resources.yaml``` ile is currently referenced in the repo’s RO-crate in the schema.org ```availableOnDevice``` property.
+execution environment. This file can include storage, memory, CPU count, CPU architecture and GPU requirements, and 
+anything unspecified is treated as "don't care".
+This file will be used by ATAP portal to filter known BinderHub installations by resource levels to ensure successful execution.
+The labels and values used in ```resources.yaml``` are derived from JupyterHub configuration YAML which specifies resources for Kubernetes pods.
+The ```resources.yaml``` file is currently referenced in the repo’s RO-crate in the schema.org ```availableOnDevice``` property.
 
 ${exampleEntities('hardware-env', ['./', 'resources.yml'])}
 
