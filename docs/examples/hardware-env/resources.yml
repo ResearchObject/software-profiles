@@ -1,17 +1,12 @@
-resources:​
-
-  architecture:​
-
-  - x86_64​
-
-  - aarch64​
-
-cpu: 2​
-
-  gpu:​
-
-    nvidia.com/gpu: 1​
-
-  memory: 2G​
-
-  storage: 2Gi
+---
+# File specifying hardware resources for execution of the Jupyter notebook in this repo.
+# Note that unspecified == "don't care"
+resources:
+#  architecture:
+#  - x86_64
+#  - aarch64
+  cpu: 1
+#  gpu:
+#    nvidia.com/gpu: 1
+  memory: 512k
+  storage: 1Gi
