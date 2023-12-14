@@ -13,6 +13,9 @@
   "author": "University of Queensland",
   "license": "GPL-3.0",
   "dependencies": {
-    "ro-crate-editor-profiles": "github:Language-Research-Technology/ro-crate-editor-profiles"
+    "lodash": "^4.17.21",
+    "ro-crate": "^3.3.4",
+    "ro-crate-editor-profiles": "github:Language-Research-Technology/ro-crate-editor-profiles",
+    "yargs-parser": "^21.1.1"
   }
 }
